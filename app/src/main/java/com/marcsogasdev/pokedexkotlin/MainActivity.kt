@@ -6,8 +6,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.marcsogasdev.pokedexkotlin.databinding.ActivityMainBinding
+import com.marcsogasdev.pokedexkotlin.service.PokeapiService
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(),SearchView.OnQueryTextListener {
     private fun getRetrofit():Retrofit{
         return Retrofit.Builder()
             .baseUrl("https://dog.ceo/api/breed/")
-               // "https://pokeapi.co/api/v2/pokemon/")
+                //"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-i/yellow/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

@@ -1,4 +1,4 @@
-package com.marcsogasdev.pokedexkotlin
+package com.marcsogasdev.pokedexkotlin.service
 
 import com.marcsogasdev.pokedexkotlin.PokemonRespuesta
 import retrofit2.Response
